@@ -17,7 +17,7 @@ services:
       target: builder
     stop_signal: SIGINT
     environment:
-      - GATEWAY_SERVER_PORT=9091
+      - FLASK_SERVER_PORT=9091
     volumes:
       - ./gateway:/src
     depends_on:
